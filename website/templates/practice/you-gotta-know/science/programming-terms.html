@@ -1,0 +1,278 @@
+{% extends "base.html" %}  {% block title %}Programming Terms{% endblock %}
+
+{% block content %}
+<br />
+<br />
+<ul style="list-style-type:none; padding-left: 0;">
+    <li style="display:inline"><a style="color: maroon;" href="/practice">Practice </a> | </li>
+    <li style="display:inline"><a style="color: maroon;" href="/practice/you-gotta-know/science">Science</a> | </li>
+    <li style="display:inline">Programming Terms</li>
+</ul>
+
+<br />
+<h1 style="font-family: Cambria">
+    <a style="color: black;" target="_blank" 
+    href="https://www.naqt.com/you-gotta-know/programming-terms.html">
+    You Gotta Know These Programming Terms
+    </a>
+</h1>
+<br />
+
+<ul class="list2">
+    <li class="list_item">
+        <p class="justify">
+            An <span style="font-family: Cambria; font-weight: bold; 
+            font-size: large;">algorithm</span> is a set of detailed 
+            instructions for solving a problem, such as &#8220;sort a 
+            list&#8221; or &#8220;divide two numbers.&#8221; Algorithms can 
+            be described in human language, a programming language, or in 
+            other ways, but they are written in detail to explain how to 
+            handle all possible inputs (e.g., the list to sort or the numbers 
+            to divide) or fail if the task is impossible (e.g., if dividing 
+            two numbers and the second is 0).
+        </p>
+        <p class="justify">
+            The word &#8220;algorithm&#8221; derives from the name of 
+            <span style="font-weight: bold;">Al-Khwarizmi</span>, a Persian 
+            scholar also credited with some of the most fundamental 
+            principles in algebra.
+        </p>
+        <p class="justify">
+            Computer scientists analyze how many steps algorithms need 
+            (<span style="font-weight: bold;">time complexity</span>) and 
+            how much memory they need for temporary storage of intermediate 
+            results (<span style="font-weight: bold;">space complexity
+            </span>). The worst-case situations are expressed using 
+            <span style="font-weight: bold;">big&nbsp;O notation</span>; for 
+            example, if an algorithm to sort a list of <i>n</i>&nbsp;items 
+            might need up to <i>n</i><sup>2</sup> to sort the list, the 
+            algorithm&#8217;s worst-case time complexity is <i>O</i>(
+            <i>n</i><sup>2</sup>). (This is a simplification of the 
+            mathematics of asymptotic notation.)
+        </p>
+    </li>
+    <li class="list_item">
+        <p class="justify">
+            <span style="font-family: Cambria; font-weight: bold; 
+            font-size: large;">Recursion</span> is a technique used in some 
+            algorithms. Sometimes an algorithm calls itself to solve a 
+            smaller case of the problem, until it reaches a simple 
+            <span style="font-weight: bold;">base case</span> that is 
+            already solved. For example, a recursive algorithm to calculate 
+            <i>n</i>&nbsp;factorial uses the fact that <i>n</i>
+            !&nbsp;=&nbsp;<i>n</i>&middot;(<i>n</i>&minus;1)!, so it calls 
+            itself on <i>n</i>&minus;1 and keeps going with smaller values 
+            until it reaches the base case of 1!, which is just 1.
+        </p>
+        <p class="justify">
+            <span style="font-weight: bold;">Tail recursion</span> is the 
+            use of recursion as the last step of an algorithm. Algorithms 
+            that use tail recursion are often more optimized by compilers. 
+            Recursive algorithms can have their big&nbsp;O runtime 
+            calculated by the <span style="font-weight: bold;">Master 
+            theorem</span>.
+        </p>
+    </li>
+    <li class="list_item">
+        <p class="justify">
+            A <span style="font-family: Cambria; font-weight: bold; 
+            font-size: large;">graph</span> is a mathematical concept often 
+            used in algorithms, in which a set of 
+            <span style="font-weight: bold;">vertices</span> is connected by 
+            a set of <span style="font-weight: bold;">edges</span>. In 
+            visual representations, the vertices are shown as dots, with 
+            edges shown as lines between the two vertices they connect. A 
+            <span style="font-weight: bold;">path</span> between two 
+            vertices is a sequence of edges that starts at the first vertex 
+            and ends at the last. A <span style="font-weight: bold;">cycle
+            </span> is a path that begins and ends at the same vertex.
+        </p>
+        <p class="justify">
+            A graph is called <span style="font-weight: bold;">weighted
+            </span> if every edge has a number representing the 
+            &#8220;cost&#8221; of traveling the edge; weighted graphs are 
+            used, for example, in analyzing navigation, with vertices 
+            representing cities, edges representing roads between them, and 
+            weights representing distance (or travel time). A graph is 
+            called <span style="font-weight: bold;">directed</span> if each 
+            edge has an inherent direction (an edge going from vertex&nbsp;
+            <i>A</i> to vertex&nbsp;<i>B</i>, but not from <i>B</i> to 
+            <i>A</i>), e.g., representing a one-way road
+        </p>
+        <p class="justify">
+            Graphs are also called <span style="font-weight: bold;">networks
+            </span>, and this is the origin of the term 
+            <span style="font-weight: bold;">social network</span>: if 
+            vertices represent people and edges represent who knows whom, 
+            a social network is a graph of a collection of people and the 
+            relationships between them.
+        </p>
+        <p class="justify">
+            Graphs are used to organize data (often in 
+            <span style="font-weight: bold;">trees</span>, which are graphs 
+            in which you can reach any vertex from any other vertex, but 
+            there are no cycles), analyze navigation/travel (broadly 
+            construed, such as the flow of fluid in a complex pipe system), 
+            manage tasks and scheduling (with edges representing 
+            dependencies), and more.
+        </p>
+        <p class="justify">
+            <span style="font-weight: bold;">Dijkstra&#8217;s algorithm
+            </span> is used to find the shortest path between two vertices 
+            of a graph (possibly a weighted graph, in which case 
+            &#8220;shortest&#8221; means least total weight). 
+            <span style="font-weight: bold;">Prim&#8217;s algorithm</span> 
+            and <span style="font-weight: bold;">Kruskal&#8217;s algorithm
+            </span> are used to find a graph&#8217;s 
+            <span style="font-weight: bold;">minimum spanning tree</span>, 
+            that is a tree connecting all its vertices whose edges have 
+            the smallest possible total weight.
+        </p>
+    </li>
+    <li class="list_item">
+        <span class="label">Divide-and-conquer algorithms</span> use recursion 
+        to split problems into smaller subproblems with smaller input sets. 
+        By solving the same problem on each of these subproblems, then 
+        combining the outputs in some way, a divide-and-conquer algorithm 
+        can efficiently solve problems on big input sets. 
+        <span style="font-weight: bold;">Merge sort</span> (a sorting 
+        algorithm), <span style="font-weight: bold;">binary search</span> 
+        (an algorithm for finding an item in a sorted list), and 
+        <span style="font-weight: bold;">Karatsuba&#8217;s algorithm</span> 
+        (an algorithm for multiplying integers) are examples of 
+        divide-and-conquer algorithms.
+    </li>
+    <li class="list_item">
+        <span class="label">Greedy algorithms</span> are algorithms that 
+        make the locally optimum or &#8220;best&#8221; choice at every step. 
+        Such algorithms may or may not produce an overall best solution. 
+        Consider an algorithm for making change in which you pick the 
+        largest coin smaller than or equal to the amount of change you need 
+        to give. If you need to give 7&cent; change, you first pick a 
+        nickel (5&cent;) and still have to make 2&cent; change, so you pick 
+        a penny (1&cent;) and still have to make 1&cent;, so you add an 
+        additional penny and have broken the 7&cent; into 
+        5&cent;&nbsp;+&nbsp;1&cent;&nbsp;+&nbsp;1&cent;. In the U.S. coin 
+        system, this is optimal in the sense of using as few coins as 
+        possible, namely three coins. However, in a coin system that offered 
+        coins worth 1&cent;, 3&cent;, 4&cent;, and 5&cent;, the greedy 
+        algorithm would give the same solution, even though a solution with 
+        fewer coins is possible (4&cent;&nbsp;+&nbsp;3&cent;).
+    </li>
+    <li class="list_item">
+        A <span class="label">programming language</span> is a way to write 
+        algorithms and other instructions in a way that can (usually after 
+        additional steps) be understood and executed by a computer. Almost 
+        all programming languages have ways of defining 
+        <span style="font-weight: bold;">variables</span>, which hold data, 
+        and <span style="font-weight: bold;">functions</span>, which are 
+        sets of instructions that achieve some task (such as performing an 
+        algorithm). <span style="font-weight: bold;">Java</span>, 
+        <span style="font-weight: bold;">JavaScript</span> (which is not 
+        the same as Java), <span style="font-weight: bold;">C</span>, 
+        <span style="font-weight: bold;">C++</span>, and 
+        <span style="font-weight: bold;">Python</span> are common 
+        programming languages. Programming languages can be categorized by 
+        their <span style="font-weight: bold;">paradigm</span> (which is 
+        a general sense of how the code tends to be structured), 
+        <span style="font-weight: bold;">typing</span> (see below), how 
+        they are run (compiled or interpreted), and in other ways.
+    </li>
+    <li class="list_item">
+        <span class="label">Object-oriented programming</span> is a 
+        programming paradigm that involves the creation of 
+        <span style="font-weight: bold;">objects</span> from 
+        <span style="font-weight: bold;">classes</span> that can hold data 
+        and transform it in various ways. A class is a definition of the 
+        fundamental properties than an object has, while objects are 
+        specific examples of a class (for instance, the general idea of 
+        a dog is a class, while your pet dog would be an object.) 
+        <span style="font-weight: bold;">Inheritance</span> allows 
+        subclasses to be defined so that the properties of a parent class 
+        are present in the sub-class (for example, &#8220;schnauzer&#8221; 
+        might be a subclass of &#8220;dog&#8221;). In 
+        <span style="font-weight: bold;">composition</span>, an object 
+        contains or references another object (which might or might not 
+        be of the same class, e.g., a dog&#8217;s digestive system might 
+        be another object). Object-oriented programming also often uses 
+        <span style="font-weight: bold;">encapsulation</span> to hide 
+        unnecessary details from other aspects, e.g., a dog&#8217;s 
+        digestive system doesn&#8217;t need to know about its circulatory 
+        system. <span style="font-weight: bold;">Polymorphism</span> is 
+        the idea that different classes may be able to do the same things 
+        in potentially different ways, e.g., animals all eat but they do 
+        so in different ways. Java and C++ are object-oriented languages.
+    </li>
+    <li class="list_item">
+        <span class="label">Functional programming</span> is a paradigm 
+        based on the execution of various functions to calculate values. 
+        Functions in pure functional programming are free of 
+        <span style="font-weight: bold;">side effects</span>, meaning that 
+        they do not change the program state but only compute values. 
+        Functional languages use <span style="font-weight: bold;">currying
+        </span> to evaluate functions with multiple inputs. 
+        <span style="font-weight: bold;">ML</span> and 
+        <span style="font-weight: bold;">Haskell</span> are functional 
+        programming languages.
+    </li>
+    <li class="list_item">
+        A <span class="label">compiler</span> is used with many programming 
+        languages to convert human-readable code into instructions that a 
+        machine can execute. C and C++ programs are often compiled by 
+        <span style="font-weight: bold;">GCC</span> into code specific for 
+        the machine the compiler is running on. Java&#8217;s compiler 
+        instead compiles into a less specific format called 
+        <span style="font-weight: bold;">bytecode</span>, which is 
+        executed by the <span style="font-weight: bold;">Java Virtual 
+        Machine</span> (JVM). Since compiled Java can be run on any machine 
+        with a JVM, Java is referred to as &#8220;write once, run anywhere.
+        &#8221; Some languages are not compiled before running but instead 
+        have their code turned into machine instructions as they run, such 
+        as JavaScript and Python; these languages are called 
+        <span style="font-weight: bold;">interpreted</span>.
+    </li>
+    <li class="list_item">
+        <p class="justify">
+            A language&#8217;s <span style="font-family: Cambria; 
+            font-weight: bold; font-size: large;">typing</span> refers to 
+            how the type of data a variable holds is defined and can or 
+            can&#8217;t change. Common types of variables are 
+            <span style="font-weight: bold;">booleans</span>, which can only 
+            be true or false; <span style="font-weight: bold;">strings</span>, 
+            which hold text; <span style="font-weight: bold;">integers</span>; 
+            and <span style="font-weight: bold;">floats</span> and 
+            <span style="font-weight: bold;">doubles</span>, which hold non-
+            integer numbers.
+        </p>
+        <p class="justify">
+            In <span style="font-weight: bold;">statically typed languages
+            </span>, a variable is given a type the first time it is used 
+            and can&#8217;t be changed; compilers check that all variables 
+            have the correct types while the program is compiling, which 
+            helps catch errors but also makes some tasks more difficult. 
+            Java, C, and C++ have static typing.
+        </p>
+        <p class="justify">
+            <span style="font-weight: bold;">Dynamically typed languages
+            </span> do not check types when compiling, which makes some 
+            tasks easier, but type errors (e.g., trying to multiply two 
+            strings) can occur while the program is running. Python and 
+            JavaScript are dynamically typed.
+        </p>
+        <p class="justify">
+            Some languages support <span style="font-weight: bold;">duck 
+            typing</span>, which is sort of intermediate between static and 
+            dynamic typing. Duck typing essentially allows objects to do 
+            the same or similar things even if their classes have no formal 
+            relation. For example, airplanes and birds might both have a 
+            &#8220;fly&#8221; capability even though neither is a subclass 
+            of the other (or otherwise related).
+        </p>
+    </li>
+</ul>
+<br />
+<p class="justify">This article was contributed by former NAQT writer Vishwa Shanmugam.</p>
+<br />
+<br />
+<br />
+{% endblock %}
