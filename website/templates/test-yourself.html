@@ -1,0 +1,54 @@
+{% extends "base.html" %} {% block title %}Test Yourself{% endblock %} 
+
+{% block content%}
+<br />
+<br />
+<ul style="list-style-type:none; padding-left: 0;">
+    <li style="display:inline"><a style="color: maroon;" href="/practice">Test Yourself</a> | </li>
+    <li style="display:inline">Information</li>
+</ul>
+<br />
+<h1 style="font-family: Cambria" align="center">Test Yourself</h1>
+<br />
+<p class="justify">This page will help you practice or prepare yourself for a Quiz Bowl Tournament with some resources from the National Academic Quiz Tournaments (NAQT), LLC.</p>
+<p class="justify">
+    This quiz game will be testing your knowledge with a timer. However, bonus questions will not be included. Only Tossups will be tested. If you know the answer 
+    to the questions, just click the "Buzz" button. You will then have 15 seconds with a visible timer to write down your answer. If the answer is correct, you 
+    will receive 10 points. If the answer is incorrect, the game will move on to the next question.
+</p>
+<p class="justify">You can chose whether you want to test yourself by category or simulate a tournament with randomized questions.</p>
+<p class="justify">If requested, I can include bonus questions in the future too.</p>
+<br />
+
+<div id="div1" style="float:left;width: 50%; margin-bottom: 150px;">
+    <h5>Categories</h5>
+    <ul style="padding-left: 0; list-style-position: outside; margin-left: 2em;">
+        <li><a style="color: maroon;" href="/test-yourself/geography">Geography</a></li>
+        <li><a style="color: maroon;" href="/test-yourself/history">History</a></li>
+        <li><a style="color: maroon;" href="/test-yourself/literature">Literature</a></li>
+        <li><a style="color: maroon;" href="/test-yourself/mathematics">Mathematics</a></li>
+        <li><a style="color: maroon;" href="/test-yourself/miscellaneous">Miscellaneous</a></li>
+        <li><a style="color: maroon;" href="/test-yourself/music-and-auditory-art">Music and Auditory Art</a></li>
+        <li><a style="color: maroon;" href="/test-yourself/mythology">Mythology</a></li>
+        <li><a style="color: maroon;" href="/test-yourself/people">People</a></li>
+        <li><a style="color: maroon;" href="/test-yourself/performance">Performance</a></li>
+        <li><a style="color: maroon;" href="/test-yourself/philosophy">Philosophy</a></li>
+        <li><a style="color: maroon;" href="/test-yourself/popular-culture">Popular Culture</a></li>
+        <li><a style="color: maroon;" href="/test-yourself/religion">Religion</a></li>
+        <li><a style="color: maroon;" href="/test-yourself/science">Science</a></li>
+        <li><a style="color: maroon;" href="/test-yourself/social-science">Social Science</a></li>
+        <li><a style="color: maroon;" href="/test-yourself/sports">Sports</a></li>
+        <li><a style="color: maroon;" href="/test-yourself/visual-art">Visual Art</a></li>
+        <br />
+    </ul> 
+</div>
+
+<div id="div2" style="float:left;width: 50%;">
+    <h5>Tournament Simulator</h5>
+    <ul>
+        <li><a style="color: maroon;" href="/test-yourself/tournament-simulator">Randomized Questions</a></li>
+        <br />
+    </ul> 
+</div>
+
+{% endblock %}
