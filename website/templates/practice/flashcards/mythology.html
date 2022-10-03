@@ -1,0 +1,50 @@
+{% extends "base.html" %} {% block title %}Mythology Flashcards{% endblock %}
+{% block content%}
+<br />
+<br />
+<ul style="list-style-type:none; padding-left: 0;">
+    <li style="display:inline"><a style="color: maroon;" href="/practice">Practice </a> | </li>
+    <li style="display:inline">Mythology Flashcards</li>
+</ul>
+<form method="POST">
+<h1 align="center" style="font-family: Cambria; font-weight: bold; ">Mythology Flashcards</h1>
+<center>
+    <div class="card">
+		<div class="card__inner">
+			<div class="card__face card__face--front" style="padding-left: 30px; padding-right: 30px">
+				<center>
+					<h4>
+						{% for mythologycard in mythologycard %}
+							{{ mythologycard.question }}
+					</h4>
+				</center>
+			</div>
+			<div class="card__face card__face--back">
+				<div class="card__content">
+					<div class="card__header">
+					</div>
+					<div class="card__body">
+						<center>
+							<h2>
+    							{{ mythologycard.answer }}
+  								{% endfor %}
+							</h2>
+						</center>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</center>
+</form> 
+<h3 style="margin-top: 30px;" align="center" >Did you know it?</h3>
+<div class="button_list" style="margin-bottom: 150px;">
+	<div class="table">
+		<ul style="list-style-type:none;" align="center">
+			<li style="display: inline-block; width: 30%; padding: 10px 3px;"><button type="button" class='button' style="background-color: #B00000;">No</button></li>
+			<li style="display: inline-block; width: 30%; padding: 10px 3px;"><button type="button" class='button' style="background-color: #4CAF50;">Yes</button></li>
+			<li style="display: inline-block; width: 30%; padding: 10px 3px;"><button type="button" class='button' style="background-color: #0096FF;">Next</button></li>
+		</ul>
+	</div>
+</div>
+{% endblock %}
