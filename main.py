@@ -9,5 +9,5 @@ def static_dir(path):
 
 #Run web server if you run this file directly
 if __name__=='__main__':
-    app.run(debug=True)
+    app.run(debug=True) 
     
