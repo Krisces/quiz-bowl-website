@@ -11,7 +11,7 @@ You're sections headers will be used to reference location of destination.
 - [Description](#description)
 - [Setup and Installtion](#setup-and-installation)
 - [Running the App](#running-the-app)
-- [Viewing the App] (#viewing-the-app)
+- [Viewing the App](#viewing-the-app)
 
 ---
 
