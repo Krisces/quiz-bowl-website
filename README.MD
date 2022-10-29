@@ -1,8 +1,8 @@
 # quiz-bowl-website
 
 
-> A website to practice for Collegiate Quiz Bowl Tournaments that is still in progress
-> Link to the [Quiz Bowl Practice Website](http://quizbowlpractice.pythonanywhere.com/)
+> A website to practice for Collegiate Quiz Bowl Tournaments that is still in progress <br/>
+Link to the [Quiz Bowl Practice Website](http://quizbowlpractice.pythonanywhere.com/)
 ---
 
 ### Table of Contents
