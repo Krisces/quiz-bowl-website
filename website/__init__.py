@@ -40,6 +40,7 @@ def create_app():
 
 #Create the actual database and implement models
 def create_database(app):
-    if not path.exists('website' + DB_NAME):     #Use path module to check if database exists
-        db.create_all(app=app)                #Creates database if it doesn't exist yet 
+    db_path = path.join('website', DB_NAME)
+    if not path.exists(db_path):
+        db.create_all(app=app)
         print('Created Database!')
