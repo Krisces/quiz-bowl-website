@@ -1,13 +1,10 @@
 from website import create_app
-from flask import Flask, send_from_directory
+import os
 
-app=create_app()
+app = create_app()
 
-@app.route("/static/<path:path>")
-def static_dir(path):
-    return send_from_directory("static", path)
-
-#Run web server if you run this file directly
-if __name__=='__main__':
-    app.run(debug=True)
+if __name__ == '__main__':
+    port = int(os.environ.get('PORT', 10000))  # Render provides PORT
+    app.run(host='0.0.0.0', port=port)
     
+
