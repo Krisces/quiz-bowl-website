@@ -2,7 +2,7 @@
 
 
 > A website to practice for Collegiate Quiz Bowl Tournaments that is still in progress <br/>
-Link to the [Quiz Bowl Practice Website](http://quizbowlpractice.pythonanywhere.com/)
+Link to the [Quiz Bowl Practice Website](https://quiz-bowl-website.onrender.com/)
 ---
 
 ### Table of Contents
@@ -64,3 +64,4 @@ After successfully running main.py
 Go to `http://127.0.0.1:5000`
 
 [Back To The Top](#quiz-bowl-website)
+
